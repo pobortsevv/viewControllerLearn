@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,32 +13,32 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="viewControllerLearn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErF-6K-s9B">
-                                <rect key="frame" x="92" y="379" width="230" height="138"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErF-6K-s9B">
+                                <rect key="frame" x="72" y="379" width="230" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <state key="normal" title="changeView">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <action selector="changeView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="57N-yR-rWk"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3L-PS-1W8">
-                                <rect key="frame" x="147" y="525" width="121" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="actionBySeque:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZYy-O3-WEF"/>
-                                    <segue destination="IzV-L0-Ktg" kind="show" id="fdg-68-1zn"/>
+                                    <segue destination="IzV-L0-Ktg" kind="show" id="FOV-Gb-YAX"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ErF-6K-s9B" secondAttribute="trailing" constant="53" id="CQQ-QI-doQ"/>
+                            <constraint firstItem="ErF-6K-s9B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="JmK-Ac-jmF"/>
+                            <constraint firstItem="ErF-6K-s9B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="Rot-Ax-G7e"/>
+                            <constraint firstItem="ErF-6K-s9B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="XkY-rF-RVp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ErF-6K-s9B" secondAttribute="trailing" constant="73" id="cA7-f5-dFF"/>
+                            <constraint firstItem="ErF-6K-s9B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="335" id="saH-Lc-8tJ"/>
+                            <constraint firstItem="ErF-6K-s9B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="x1F-hh-Oz4"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -50,16 +50,36 @@
             <objects>
                 <viewController id="IzV-L0-Ktg" customClass="SecondViewController" customModule="viewControllerLearn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8nh-gA-orQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgL-D7-OWi">
+                                <rect key="frame" x="59" y="288" width="257" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="backChangeView">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="backChangeView:" destination="IzV-L0-Ktg" eventType="touchUpInside" id="WN7-wp-DpN"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="nS3-OF-3PP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LgL-D7-OWi" firstAttribute="top" secondItem="nS3-OF-3PP" secondAttribute="top" constant="288" id="W1m-Up-Y1h"/>
+                            <constraint firstItem="LgL-D7-OWi" firstAttribute="leading" secondItem="nS3-OF-3PP" secondAttribute="leading" constant="59" id="eu8-om-g6X"/>
+                            <constraint firstItem="nS3-OF-3PP" firstAttribute="trailing" secondItem="LgL-D7-OWi" secondAttribute="trailing" constant="59" id="kRm-sQ-T3D"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eOo-Pk-hGT"/>
+                    <connections>
+                        <outlet property="close" destination="LgL-D7-OWi" id="E9h-By-bBV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yzy-C9-qat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="764" y="94"/>
+            <point key="canvasLocation" x="764" y="93.842364532019715"/>
         </scene>
     </scenes>
     <resources>
