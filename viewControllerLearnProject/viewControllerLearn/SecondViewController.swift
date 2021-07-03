@@ -9,8 +9,35 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    let stackView = UIStackView()
+    let firstLabel = UILabel()
+    let secondLabel = UILabel()
+    
+    var i = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .red
+        firstLabel.text = "\(i)"
+        addSubviewAndSetup()
+        makeConstraints()
+    }
+    
+    func addSubviewAndSetup() {
+        self.view.addSubview(stackView)
+        stackView.axis = .vertical
+        stackView.addArrangedSubview(firstLabel)
+        stackView.addArrangedSubview(secondLabel)
+        firstLabel.backgroundColor = .red
+        secondLabel.backgroundColor = .green
+    }
+    
+    func makeConstraints() {
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        firstLabel.translatesAutoresizingMaskIntoConstraints = false
+        secondLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            stackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            stackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+        ])
     }
 }

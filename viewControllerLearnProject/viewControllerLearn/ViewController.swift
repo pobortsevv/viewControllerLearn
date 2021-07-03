@@ -18,11 +18,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func changeView(_ sender: UIButton) {
-        print(#function)
-        self.present(SecondViewController(), animated: true) {
-            print("Constroller did appear")
+        let vc = SecondViewController()
+        vc.view.backgroundColor = .cyan
+        vc.i = 5
+        self.present(vc, animated: true) {
+            print("Controller did appear")
+            // ПОЧЕМУ НА ЛЕЙБЛЕ ДО СИХ ПОР 0??
         }
     }
-    
 }
 
