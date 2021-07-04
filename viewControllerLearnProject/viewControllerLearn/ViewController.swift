@@ -19,8 +19,9 @@ class ViewController: UIViewController {
     
     @IBAction func changeView(_ sender: UIButton) {
         let vc = SecondViewController()
-        //vc.view.backgroundColor = .cyan
-        vc.i = 5
+        vc.view.backgroundColor = .cyan
+        
+		vc.i = 5
         vc.j = 6
         self.present(vc, animated: true) {
             print("Controller did appear")
