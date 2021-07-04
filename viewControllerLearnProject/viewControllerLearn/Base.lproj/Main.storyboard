@@ -31,13 +31,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ErF-6K-s9B" secondAttribute="trailing" constant="53" id="CQQ-QI-doQ"/>
                             <constraint firstItem="ErF-6K-s9B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="JmK-Ac-jmF"/>
                             <constraint firstItem="ErF-6K-s9B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="Rot-Ax-G7e"/>
-                            <constraint firstItem="ErF-6K-s9B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="XkY-rF-RVp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ErF-6K-s9B" secondAttribute="trailing" constant="73" id="cA7-f5-dFF"/>
                             <constraint firstItem="ErF-6K-s9B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="335" id="saH-Lc-8tJ"/>
-                            <constraint firstItem="ErF-6K-s9B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="x1F-hh-Oz4"/>
                         </constraints>
                     </view>
                 </viewController>
