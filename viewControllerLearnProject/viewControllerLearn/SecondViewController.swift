@@ -14,10 +14,12 @@ class SecondViewController: UIViewController {
     let secondLabel = UILabel()
     
     var i = 0
+    var j = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         firstLabel.text = "\(i)"
+        secondLabel.text = "\(j)"
         addSubviewAndSetup()
         makeConstraints()
     }
